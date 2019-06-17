@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Travel reservation form</title>
+        <meta charset="UTF-8"/>
+        <style>
+        input {
+            height: 30px;
+            border-radius: 10px;
+            border-color: cornflowerblue;
+            margin:auto 20px;
+            padding: 25px;
+        }
+        h1, h4 {
+            border-radius: 20px;
+        }
+        input[type="text"] {
+            height: 30px;
+        }
+        input[type="checkbox"]{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        input[type="checkbox"] + label {
+            display: inline;
+        }
+        li:nth-child(4) {
+            color: red;
+        }
+        li::first-letter {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+          }
+          body {
+              background-image: url(vacay.jpg);
+              
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Travel reservation form</h1>
+        <h4>*denotes mandatory</h4>
+        <ol>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+            <li>This is a mandatory element.</li>
+        </ol>
+        <form>
+            <label for="name">Full name*:</label><br>
+            <input type="text" id="name" name="name" placeholder="FirstName LastName" required/>
+            <br>
+            <br>
+            <label for="email">Email address*:</label><br>
+            <input type="text" id="email" name="email" placeholder="EMAIL_ADDRESS" required/>
+            <br>
+            <br>
+            <label for="package">Select Tour Package*:</label>
+            <select id="package">
+                <option value="Culture Guide">Culture Guide</option>
+                <option value="Adventure Guide">Adventure Guide</option>
+                <option value="Nature Guide">Nature Guide</option>
+            </select><br>
+            <br>
+            <label for="date">Arrival date*:</label><br>
+            <input type="date" id="start" name="trip-start" value="2019-06-28" min="2019-06-01" max="2019-12-31">
+            <br>
+            <br>
+            <label for="persons">Number of persons*:</label><br>
+            <input type="number" id="number" name="persons" min="0" max="1000000000000" placeholder="UNKNOWN_TYPE"/> 
+            <br>
+            <br>
+            <p>What would you want to avail?</p>
+            <br>
+                    <input type="checkbox" id="boarding" name="necesities" value="1"/>
+                    <label for="boarding" class="inline">Boarding</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="fooding" name="necesities" value="2"/>
+                    <label for="fooding" class="inline">Fooding</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="seeing" name="necesities" value="3"/>
+                    <label for="seeing" class="inline">Sight seeing</label><br>
+                    <br>
+                    <label for="discount">Discount Coupon code:</label><br>
+                    <input type="text" id="discount" name="discount" minlength="4" maxlength="8" placeholder="UNKNOWN_TYPE"/> 
+                    <br>
+                    <p>Terms and conditions*:</p>
+                    <input type="radio" id="radio" name="acord" value="1" checked="I agree"/><label for="radio">I agree</label>
+                    <input type="radio" id="radio" name="acord" value="5"/><label for="radio">I disagree</label>
+                    <br>
+                    <br>
+                    <button name="submit">Complete reservation</button>
+                </form> 
+    </body>
+</html>

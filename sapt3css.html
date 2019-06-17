@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            h1 {
+                border-color: red 2px;
+                background-color: #66aa66;
+                padding: 10px;
+            }
+            ul{
+                margin: 15px;
+                background-color: #DE1E7E;
+            }
+            p::after { 
+                width: 500px;
+                height: 300px;
+                border: 2px dotted black;
+                background-color: #ffbb11;
+                content: **;
+                display: block;
+            }
+            a {
+                background: #a1a1a1;
+                text-decoration: 1px underline dashed blue;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is an h1</h1>
+    </br
+        <ul>
+            <li>This is an item</li>
+            <li>This is an item</li>
+            <li>This is an item</li>
+            <li>This is an item</li>
+        </ul>
+        <br/>
+            <p>This is an paragraph</p>
+            <p>This is an paragraph</p>
+            <p>This is an paragraph</p>
+            <p>This is an paragraph</p>
+            <br/>
+        <a href="https://test.com">Click!</a>
+        <a href="https://test.com">Clck!</a>
+        <a href="https://test.com">Click!</a>
+    </body>
+</html>

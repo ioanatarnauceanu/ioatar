@@ -1,0 +1,21 @@
+/* myStyle.css */
+li *{
+    color: red;
+}
+div {
+    border: 1px solid black;
+    float: initial;
+    display: block;
+}
+.test {
+    color: green;
+}
+.not {
+    color: #C55;
+}
+h2 {
+    font-family: Lobster, 'Opens Sans';
+}
+#cat {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
