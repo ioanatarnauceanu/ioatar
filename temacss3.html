@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part 4</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+                justify-content: space-around;
+               
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                }
+            
+                #app {
+                height: 70vh;
+                background-image: url('app.jpg');
+                background-clip: border-box;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: flex;
+                flex: 1 50%;
+                align-items: flex-start;
+                justify-content: space-around;
+                text-overflow: ellipsis;
+                color: rgb(180, 107, 107);
+                }
+                #br {
+                height: 80vh;
+                background-image: url('breads.jpg');
+                background-clip: border-box;
+                background-size: cover;
+                background-repeat: no-repeat;
+                align-items: flex-end;
+                justify-content: space-around;
+                flex: 2 50%;
+                display: flex;
+                }
+                #dr {
+                height: 80vh;
+                background-image: url('drinks.jpg');
+                background-clip: border-box;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 2px black dashed;
+                align-items: flex-start;
+                justify-content: space-around;
+                flex: 1 50%;
+                display: flex;
+                }
+                #fast {
+                height: 80vh;
+                background-image: url('wok.jpg');
+                background-clip: border-box;
+                background-size: 500px 500px;
+                background-repeat: no-repeat;
+                align-items: flex-end;
+                justify-content: space-around;
+                flex: 2 50%;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+        <div id="app"><p>appetiezers and bites</p></div></br>
+        <div id="br"><p>breads</p></div></br>
+        <div id="dr"><p>drinks</p></div></br>
+        <div id="fast"><p>fast</p></div></br>
+        </div>
+    </body>
+</html>

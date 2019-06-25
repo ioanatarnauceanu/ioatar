@@ -4,35 +4,49 @@
         <title>Home</title>
     <style>
         .container {
-            margin: 0;
-            display: absolute;
+            float: left;
+            clear: right;
+            display: flex;
         }
         nav {
-            width: 150px;
-            height: 450px;
-            position: relative;
+            width: 20%;
+            min-width: 200px;
             top: 0;
             left: 0;
             border: 5px solid blueviolet;
-            float: left;
+            float:left;
+            box-sizing: border-box;
         }
         section {
-            width: 1000px;
-            height: 200px;
+            width: 80%;
             top: 0;
-            margin-left: 10px;
-            position: relative;
+            float: right;
             border: 5px double salmon;
-            display: flex;
-            align-content: space-between;
-            
+            margin-left: 0;
+            box-sizing: border-box;
+        }
+        .girafe{
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .girafe {
+            box-sizing: border-box;
+            background-image: url(girafe.jpg);
+            background-clip: border-box;
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 5px dotted dodgerblue;
         }
         .footer {
              background-color: #F1F1F1;
+             border: 2px dotted greenyellow;
              text-align: center;
              padding: 10px;
-             float: inline-end;
-}
+             float: inherit;
+             clear: both;}
     </style>
     </head>
     <body>
@@ -49,6 +63,7 @@
         <section>The margin-left style for section$ makes sure there is room for the nav.</section>
         <section>Lorem ipsum dolor sit amet..</section>
         <section>Notice what happens when you resize your browser. It works nicely!</section>
+        <div class="girafe"></div>
         <footer class="footer">If you used a fixed header or footer, make sure there is room for it!</footer>
     </body>
 </html>

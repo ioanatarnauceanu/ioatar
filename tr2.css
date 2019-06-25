@@ -1,0 +1,45 @@
+.b1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.b1:hover {
+  background-color: yellow;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.boxes {
+  width: 500px;
+  height: 500px;
+}
+
+#b2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-transition: width ease 1s;
+  transition: width ease 1s;
+}
+
+#b3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  -webkit-transition: width ease 1s 1s;
+  transition: width ease 1s 1s;
+}
+
+.boxes:hover #b2 {
+  width: 300px;
+}
+
+.boxes:hover #b3 {
+  width: 300px;
+  -webkit-transition-delay: width 2s ease;
+          transition-delay: width 2s ease;
+}
+/*# sourceMappingURL=tr2.css.map */

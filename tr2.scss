@@ -1,0 +1,33 @@
+.b1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 1s linear;
+}
+.b1:hover {
+    background-color: yellow; 
+    transform: rotate(180deg);
+}
+.boxes{
+    width: 500px;
+    height: 500px;
+}
+#b2{
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width ease 1s;
+}
+#b3{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    transition:width ease 1s 1s;
+}
+.boxes:hover #b2{
+    width:300px;
+}
+.boxes:hover #b3{
+    width: 300px;
+    transition-delay: width 2s ease;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS4</title>
+        <style>
+            .container {
+                width: 100%;
+                height:100%;
+                display:grid;
+                grid: 200px 200px 700px 400px 200px;
+                grid-gap: 10px;
+            }
+            #Vertical {
+                height:70vh;
+                background-color: aquamarine;
+                margin: 2px;
+                padding: 2px;
+                flex:1;
+                grid-area: left;
+            }
+            #Bottom {
+                height: 70ph;
+                background-color:lightsalmon;
+                flex:2;
+                grid-area: left2;
+            }
+            #Middle {
+                width: 700px;
+                height: 500px;
+                background-color:dodgerblue;
+                grid-area: middle;
+            }
+            #Wide {
+                width: 400px;
+                height: 400px;
+                background-color: darkred;
+                grid-area: baseline;
+            }
+            #Tall {
+                width: 200px;
+                height: 800px;
+                background-color: green;
+                grid-area: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div id="Vertical">Vertical  
+            Top tile
+        </div>
+        <div id="Bottom">Bottom tiles
+            Bottom tile  
+        </div>
+        <div id="Middle">Middle tile
+            With an image 
+            <img src="vacay.jpg" width="640px" height="480px">
+        </div>
+        <div id="Wide">Wide tile 
+            Aligned with the right tile 
+            Lorem ipsum dolor sit amet, conectetur adipiscing elit. Proin ornare magna eros, eu
+            pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </div>
+        <div id="Tall">The overflow property controls what happens to content that breaks outside of its bounds: imagine a div in which you've explicitly set to be 200px wide, but contains an image that is 300px wide. 
+            That image will stick out of the div and be visible by default.
+             Whereas if you set the overflow value to hidden, the image will cut off at 200px.</div>
+        </div>
+    </body>
+</html>
